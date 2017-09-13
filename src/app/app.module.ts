@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import { appRouting } from "./app.routes";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductoComponent } from './components/producto/producto.component';
     ProductoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    appRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
