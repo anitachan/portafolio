@@ -5,7 +5,7 @@ const routes: Routes = [
     { path: 'home', component: PortafolioComponent },
     { path: 'about', component: AboutComponent },
     { path: 'producto', component: ProductoComponent },
-    { path: '**', pathMatch:'full', redirectTo: 'routePath' }
+    { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 
 export const appRouting = RouterModule.forRoot(routes, { useHash:true });
