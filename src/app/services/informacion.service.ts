@@ -26,9 +26,9 @@ export class InformacionService {
    public cargaSobreNosotros(){
     this.http.get("https://portafolio-4c8a0.firebaseio.com/equipo.json")
     .subscribe( data => {
-      console.log(data.json());
+      //console.log(data.json());
       this.cargadaSobreNosotros = true;
-      this.info = data.json();
+      this.equipo = data.json();
     })
    }
 }
