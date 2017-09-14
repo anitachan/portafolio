@@ -56,7 +56,7 @@ export class ProductosService {
     this.productos.forEach(prod => {
       if(prod.categoria.toLowerCase().indexOf(termino) >= 0 || prod.titulo.toLowerCase().indexOf(termino) >= 0){
         this.productosFiltro.push(prod);
-        console.log(prod);
+        //console.log(prod);
       } 
     });
   }
